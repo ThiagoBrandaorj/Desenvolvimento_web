@@ -1,0 +1,21 @@
+Thiago Corrêa Brandão - 202301135265
+
+python 
+https://www.python.org/doc/
+
+Git
+https://git-scm.com/doc
+
+Vscode
+https://code.visualstudio.com/docs
+
+Chrome
+https://www.google.pt/intl/pt-PT/chrome/?brand=FKPE&gclid=EAIaIQobChMInJXI1uDhgAMVBMORCh0i9gMcEAAYASAAEgIyhPD_BwE&gclsrc=aw.ds
+
+Firefox
+https://developer.mozilla.org/en-US/docs/Mozilla/Firefox
+
+Edge
+https://learn.microsoft.com/en-us/microsoft-edge/
+
+
