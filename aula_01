@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> meu experimento css</title>
+        <style>
+            h1 {
+                color: blue;
+                background-color: yellow;
+                border: 1 px solid black;
+            }
+
+            p {
+                color: red;
+            }
+            </style>
+            </head>
+            <body>
+                <h1>Olá</h1>
+                <p>primeiro exemplo css</p>
+            </body>
+</html>
