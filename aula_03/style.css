@@ -1,0 +1,15 @@
+#container{
+    display: flex;
+}
+
+#container > div{
+    flex: 1;
+}
+
+#container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 5em;
+    gap: 1em;
+}
+
