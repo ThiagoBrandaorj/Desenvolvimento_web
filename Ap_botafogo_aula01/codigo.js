@@ -1,16 +1,22 @@
-const yasmin = atletas[1];
-
-window.onload = () => {
-
-
-const espaco_imagem = document.querySelector('div#conteiner > img');
-const espaco_nome = document.getElementById('nome');
-const espaco_descricao = document.querySelector('div#conteiner > p');
-
 const preenche = (atleta) => {
-    espaco_nome.innerText = atleta.nome;
-    espaco_imagem.src = atleta.imagem;
-    espaco_descricao.innerHTML = atleta.descricao;
+    const conteiner = document.createElement('div');
+    const titulo = document.createElement('h3');
+    const imagem = document.createElement('img');
+    const descricao = document.createElement('p');
+
+    titulo.innerText = atleta.nome;
+    imagem.src = atleta.imagem;
+    descricao.innerHTML = atleta.descricao;
+
+    conteiner.appendChild(titulo);
+    conteiner.appendChild(imagem);
+    conteiner.appendChild(descricao);
+
+    document.body.appendChild(conteiner);
 }
-preenche(atletas[1])
+
+for(let indice = 0; indice < atletas.length ; indice++){
+    preenche(atletas[indice]);
+    console.log(indice, 'loop for');
 }
+
