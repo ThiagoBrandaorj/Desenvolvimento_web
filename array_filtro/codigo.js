@@ -25,7 +25,7 @@ const cria_cartao = (entrada) => {
 
     const container_atleta = document.createElement('div');
     container_atleta.style.width = '20rem';
-    container_atleta.style.backgroundColor = '#777777';
+    container_atleta.style.backgroundColor = '#daff00';
     container_atleta.style.textAlign = 'center';
     container_atleta.style.margin = 'auto';
     const titulo = document.createElement('h3');
