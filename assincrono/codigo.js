@@ -1,6 +1,6 @@
-const url = "https://botafogo-atletas.mange.li/";
+const url = "https://botafogo-atletas.mange.li";
 
-const numero_jogador = 24;
+const numero_jogador = 36;
 
 const cria_cartao = (entrada) => { 
 
@@ -24,17 +24,15 @@ const cria_cartao = (entrada) => {
     document.body.appendChild(container_atleta);
 }
 
-
-
-const pegar_coisas = async (caminho) => {
+const pega_json = async (caminho) => {
     const resposta = await fetch(caminho);
     const dados = await resposta.json();
     return dados;
-};
+}
 
-pegar_coisas(`${url}/${numero_jogador}`).then(
-    (entrada) => console.log(entrada)
-);
+pega_json(url).then( (r) => console.log(r));
 
-console.log('assíncrono');
+pega_json(`${url}/${numero_jogador}`)
+.then((r) => cria_cartao(r));
 
+console.log('síncrono');
