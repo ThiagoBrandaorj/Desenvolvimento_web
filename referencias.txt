@@ -1,21 +1,29 @@
 Thiago Corrêa Brandão - 202301135265
 
-python 
+PYTHON
 https://www.python.org/doc/
+uso: pode ser usado para criar o servidor local web
+
+JAVASCRIP
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+uso: Linguagem usada em desenvolvimento web e compilado pelos navegadores, define o que o documento web faz de fato
+
+HTML
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+uso : Linguagem de marcação de texto , define a estrutura do dcoumento web
+
+CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+uso: Linguagem de marcação de estilo, define o estilo do documento web
 
 Git
 https://git-scm.com/doc
+uso : Ferramento de versionamento utilizada no curso
 
 Vscode
 https://code.visualstudio.com/docs
+uso : IDE utilizada no curso
 
 Chrome
 https://www.google.pt/intl/pt-PT/chrome/?brand=FKPE&gclid=EAIaIQobChMInJXI1uDhgAMVBMORCh0i9gMcEAAYASAAEgIyhPD_BwE&gclsrc=aw.ds
-
-Firefox
-https://developer.mozilla.org/en-US/docs/Mozilla/Firefox
-
-Edge
-https://learn.microsoft.com/en-us/microsoft-edge/
-
-
+uso : Navegador web padrão utilizado no curso
