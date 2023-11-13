@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 8px 0px;
+}
+
+#container-entrada{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100vw;
+    min-width: unset;
+}
+
+#intro{
+    text-align: center;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo{
+    margin: 0px auto;
+    max-width: 20em;
+}
+
+#fake-form{
+    text-align: center;
+    flex: 0 6 1 0%;
+}
+
+#entrada-senha{
+    padding: 0.3em;
+    margin: 0.5em;
+}
+
+#btn-entar{
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+#p-btn{
+    margin: 1em auto;
+}
