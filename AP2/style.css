@@ -1,50 +1,63 @@
 body{
-    display: flex;
-    height: 100vh;
-    margin: 8px 0px;
+  display: flex;
+  height: 100vh;
+  margin: 16px;
 }
 
 #container-entrada{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    width: 100vw;
-    min-width: unset;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 80vw;
+  height: fit-content;
+  min-width: 800px;
+}
+
+div{
+  display: block;
 }
 
 #intro{
-    text-align: center;
-    flex: 1 1 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  text-align: center;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#titulo{
-    margin: 0px auto;
-    max-width: 20em;
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-size: 230%;
+}
+
+p{
+  margin: 0px auto;
+  max-width: 25em;
+  font-size: 110%;
 }
 
 #fake-form{
-    text-align: center;
-    flex: 0 6 1 0%;
+  text-align: center;
+  flex: 0.6 1 0%;
 }
 
 #entrada-senha{
-    padding: 0.3em;
-    margin: 0.5em;
+  padding: 0.3em;
+  margin: 0.5em;
 }
 
-#btn-entar{
-    background-color: black;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
+button{
+  background-color: black;
+  color: antiquewhite;
+  text-align: center;
+  padding: 0.3em;
 }
 
-#p-btn{
-    margin: 1em auto;
-}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ap2 - Thiago Brandão</title>
-    <link rel="icon" type="image/png" href="img.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img.png" sizes="50x50">
     <link href="style.css" rel="stylesheet">
     <script src="md5.js"></script>
     <script src="script.js" defer></script>
@@ -13,18 +13,22 @@
 <body>
     <div id="container-entrada">
         <div id="intro">
-            <h1 id="titulo">Atletas do Botafogo em 
-                2023-2
+            <h1>Atletas do Botafogo em 2023-2
             </h1>
             <p >Criado com objetivos exclusivamente didáticos
                 para a disciplina Desenvolvimento web do Ibmec Rio
             </p>
         </div>
-        <div id="fake-form">
+        <div id="fake-form" >
            <input id="entrada-senha" type="text" placeholder="Informe a senha">
-           <button id="btn-entrar" onclick="verificaSenha()"> Entrar </button>
-           <p id="p-btn"> Efetue login com a senha: SENHA</p>
+           <button onclick="verificaSenha()"> Entrar </button>
+           <p> Efetue login com a senha: 1234</p>
          </div>
+        <div id="secreta" style="display: none;">
+            <h1>Segredo!!!</h1>
+            <button onclick="limpaCoiso()">Sair</button>
+        </div>
+        
     </div>
 </body>
 </html>

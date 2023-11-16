@@ -1,3 +1,4 @@
-function funcao1 (n1, n2) {
+function funcao1 () {
     alert('função javascript');
+    console.log('Thiago');
 };
