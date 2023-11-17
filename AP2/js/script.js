@@ -1,9 +1,10 @@
 if (sessionStorage.getItem('interno')){
-    document.getElementById('secreta').style.display = 'block';
-    document.getElementById('fake-form').style.display = 'none';
+    document.getElementById('secreta').style.display = 'flex';
+    document.getElementById('container-entrada').style.display = 'none';
+
 } else {
     document.getElementById('secreta').style.display = 'none';
-    document.getElementById('fake-form').style.display = 'block';
+    document.getElementById('container-entrada').style.display = 'flex';
 }
 
 
@@ -13,14 +14,13 @@ const verificaSenha = () => {
 
     if (hex_md5(entrada) === senha){
         sessionStorage.setItem('interno', 'qualquer valor');
-        sessionStorage.removeItem('container-entrada');
-        window.location = '/';
+        window.location.href = "clube.html";
     } else {
         alert('Senha incorreta!');
     }
 }
 
 const limpaCoiso = () => {
-    sessionStorage.removeItem('coiso');
+    sessionStorage.removeItem('interno');
     window.location = '/';
 }
