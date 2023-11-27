@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ap2 - Thiago Brandão</title>
-    <link rel="stylesheet" href="./css/styleclube.css">
+    <link rel="stylesheet" href="css/clube.css">
     <link rel="icon" type="image/png" href="img.png" sizes="50x50">
+    <script src="js/clube.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Atletas Botafogo 2023-2</h1>
+        <button id="sair-btn" onclick="sair()">Sair</button>
+    </header>
+    <div id="Barra de escolha">
+        <select id="selecao">
+            <option value="todos">Elenco Completo</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+          </select>
+    </div>
+    <select id="secreta-plantel"></select>
 </body>
 </html>

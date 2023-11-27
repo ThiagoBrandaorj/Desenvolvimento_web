@@ -60,21 +60,11 @@ button{
   text-align: center;
 }
 
-#secreta{
-  background-color: orangered;
-  width: 2000px;
-}
-
 #head-atletas{
   background-color: gainsboro;
   height: 100px;
   width: 2000px;
   text-align: left;
-}
-
-#sair{
-  float: right;
-  margin-right: 500px;
 }
 
 @media only screen and (max-width: 600px) {
