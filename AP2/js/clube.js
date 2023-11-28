@@ -31,6 +31,8 @@ jogadores.forEach(
         if (ele.elenco == "feminino"){
             div_elenco_feminino.appendChild(div_jogador);
             div_elenco_masculino.appendChild(div_jogador);
+        } else {
+            div_elenco_masculino.appendChild(div_jogador);
         }
     }
 )
