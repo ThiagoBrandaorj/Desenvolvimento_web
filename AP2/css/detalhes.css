@@ -1,43 +1,54 @@
-body{
+body {
     background-color: black;
     color: white;
     font-family: 'Nunito';
     text-align: end;
+    padding: 20px;
 }
 
 #info_jogador {
     margin: 0 auto;
     width: 70%;
     display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
 }
 
-#foto_info{
+#foto_info {
+    flex: 1; /* Ocupa 1/3 do espaço disponível */
     font-size: 20pt;
 }
 
 #detalhes_info {
-    margin-top: 4rem;
+    flex: 2; /* Ocupa 2/3 do espaço disponível */
+    margin-top: 2rem;
     text-align: left;
     padding-left: 20px;
 }
 
 /* Media Queries */
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
     #info_jogador {
-        display: grid;
+        display: block;
     }
+    #foto_info,
+    #detalhes_info {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+        margin-top: 1rem;
+    }
+    
     #foto_info {
         font-size: 15pt;
     }
+    
     #detalhes_info {
-        margin-top: 2rem;
         font-size: 10pt;
+        padding-left: 0;
     }
 }
 
-@media (max-width : 360px) {
-    #info_jogador{
+@media (max-width: 360px) {
+    #info_jogador {
         width: 80%;
     }
 }
