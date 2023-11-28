@@ -1,60 +1,57 @@
-body{
-    color: #000000;
-    background-color: rgb(221, 221, 221);
+body {
+    color: #333;
+    background-color: #f5f5f5;
     text-align: center;
-    font-family: 'Nunito';
+    font-family: 'Arial', sans-serif;
     margin: 0 auto;
 }
 
-h1, h2{
-    position: sticky;
+h1, h2 {
+    position: relative; /* Removendo sticky */
 }
 
-#lista_imagens_feminino, #lista_imagens_masculino{
-    background-color: #cccbcb;
-    width: 1200px;
+#lista_imagens_feminino, #lista_imagens_masculino {
+    background-color: #ddd;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
-@media (max-width : 1024px) {
-    #lista_imagens_feminino, #lista_imagens_masculino{
-        width: fit-content;
-        grid-template-columns : 1fr 1fr 1fr ; 
+
+@media (max-width: 1024px) {
+    #lista_imagens_feminino, #lista_imagens_masculino {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width : 768px) {
-    #lista_imagens_feminino, #lista_imagens_masculino{
-        grid-template-columns : 1fr 1fr;  /* Muda a quantidade de jogadores por fileira para 2 */   
-        font-size : 8pt; 
-        
+@media (max-width: 768px) {
+    #lista_imagens_feminino, #lista_imagens_masculino {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 14px;
     }
 }
 
-#selecao{
-    background-color: #000000;
+#selecao, #sair, #inicio {
+    background-color: #333;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 1em 1.5em;
-    display: block;
-    margin: 1em auto;
-    font-size: larger;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-#sair{
-    background-color: #000000;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    position: absolute;
+#sair {
+    position: static; /* Alterando para posição estática */
 }
 
-#inicio{
-    background-color:#cccbcb;
+#inicio {
+    background-color: #bbb;
 }

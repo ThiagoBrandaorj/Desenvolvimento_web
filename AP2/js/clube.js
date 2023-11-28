@@ -9,17 +9,13 @@ jogadores.forEach(
         const img_jogador = document.createElement('img');
         img_jogador.src = ele.imagem;
         img_jogador.style.width = "auto";
-        
-      
         const nome_jogador = document.createElement('p');
         nome_jogador.innerHTML = ele.nome;
         nome_jogador.style.fontWeight = "bolder";
-
         const div_jogador = document.createElement('div');
         div_jogador.className = "jogador";
         div_jogador.appendChild(img_jogador);
         div_jogador.appendChild(nome_jogador);
-
         div_jogador.setAttribute("data-nome", ele.nome);
         div_jogador.setAttribute("data-posicao", ele.posicao);  
         div_jogador.setAttribute("data-imagem", ele.imagem);  
@@ -27,7 +23,7 @@ jogadores.forEach(
         div_jogador.setAttribute("data-nome_completo", ele.nome_completo);
         div_jogador.setAttribute("data-nascimento", ele.nascimento);        
         div_jogador.setAttribute("data-altura", ele.altura);
-
+        
         if (ele.elenco == "feminino"){
             div_elenco_feminino.appendChild(div_jogador);
             div_elenco_masculino.appendChild(div_jogador);
