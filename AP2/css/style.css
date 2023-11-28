@@ -1,0 +1,60 @@
+body{
+    color: #000000;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    font-family: 'Nunito';
+    margin: 0 auto;
+}
+
+h1, h2{
+    position: sticky;
+}
+
+#lista_imagens_feminino, #lista_imagens_masculino{
+    background-color: #cccbcb;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin: 0 auto;
+}
+@media (max-width : 1024px) {
+    #lista_imagens_feminino, #lista_imagens_masculino{
+        width: fit-content;
+        grid-template-columns : 1fr 1fr 1fr ; 
+    }
+}
+
+@media (max-width : 768px) {
+    #lista_imagens_feminino, #lista_imagens_masculino{
+        grid-template-columns : 1fr 1fr;  /* Muda a quantidade de jogadores por fileira para 2 */   
+        font-size : 8pt; 
+        
+    }
+}
+
+#selecao{
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    display: block;
+    margin: 1em auto;
+    font-size: larger;
+}
+
+#sair{
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    position: absolute;
+}
+
+#inicio{
+    background-color:#cccbcb;
+}
